@@ -1,0 +1,33 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.text {
+    font-size: 24px;
+    width: 500px;
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 500px){
+.text {
+    width: 350px;
+    font-size: 16px;
+    color: blue;
+}
+.greeting {
+    display: none;
+}
+}
+
+@media print {
+    .text {
+        border: none;
+        color: beige;
+    }
+}
+
+
+/* 1. media type (screen, print, projection, all, speech)
+   2. logic operators (and, ",", not, only)
+   3. media function (max width, min width)*/
